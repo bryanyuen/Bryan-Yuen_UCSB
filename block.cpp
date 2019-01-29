@@ -3,7 +3,7 @@
 using namespace std;
 
 int main() {
-        string prompt =  "Enter number of rows and columns: \n";
+        string prompt =  "Enter number of rows and columns:\n";
         int rows = 0;
         int col = 0;
 
