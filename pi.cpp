@@ -1,4 +1,4 @@
-#include <iostream>
+include <iostream>
 #include <string>
 #include <cmath>
 using namespace std;
@@ -19,7 +19,11 @@ int main(){
                 for (int i = 0; i <= userInput; i++){
                         piValue += 4 * pow(-1,i)/(2*i + 1);
         }
-                cout << "The approximate value of pi using " << userInput + 1 << " term is: " << piValue << endl;
+                if(userInput > 0){
+                cout << "The approximate value of pi using " << userInput + 1 << " terms is: " << piValue << endl;
+                }else{
+                        cout <<"The approximate value of pi using " << userInput + 1 << " term is: " << piValue << endl;
+                }
                 piValue = 0.000;
                 cout << prompt << endl;
                 cin >> userInput;
